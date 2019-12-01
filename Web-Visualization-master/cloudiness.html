@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Web Application</title>
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Creates the Overall Grid -->
+  <div class=".container">
+    <nav class="navbar navbar-inverse">      
+      <ul>
+        <li>
+          <a href="LandingPage.html">Latitude</a>
+        </li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="temps.html">Max Temperature</a></li>
+              <li><a href="humidity.html">Humidity</a></li>
+              <li><a href="#">Cloudiness</a></li>
+              <li><a href="windspeed.html">Wind Speed</a></li>
+            </ul>
+          </li>
+        <li>
+          <a href="Comparisons.html">Comparison</a>
+        </li>
+        <li>
+          <a href="Data.html">Data</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Row 1 -->
+    <div class="row1">
+      <div class="col-sm-6">
+      <h2>Cloudiness</h2> 
+      <p style="color:rgba(4, 8, 65, 0.774);font-size:150%;font-family: Arial, Helvetica, sans-serif"> There is no strong relationship between latitude and cloudiness, however, it is interesting to see that a strong band of cities sits at 0, 80, and 100% cloudiness.
+      </p>
+     <img data-aria-label-part="" src="Images/Latitude_Cloudiness.png" alt="" style="width: 60%; top: -42px;"></div>
+      </div>
+      <!--Row 2-->
+    <div class="row2">
+        <div class="col-sm-6">
+         <h2>Visualisations</h2>
+      <section id="figure">
+      <img id="bio-image" src="Images/Latitude_Temperature.png" class="col-sm-12 col-md-6" style="width: 50%";>
+      <img id="bio-image" src="Images/Latitude_Humidity.png" class="col-sm-12 col-md-6"style="width: 50%";>
+      <img id="bio-image" src="Images/Latitude_Cloudiness.png" class="col-sm-12 col-md-6"style="width: 50%";>
+      <img id="bio-image" src="Images/Latitude_WindSpeed.png" class="col-sm-12 col-md-6"style="width: 50%";>
+    </section>   
+</div>
+</div>
+
+<div id="footer">@Copyright Coding Bootcamp 2019</div>
+</body>
+
+</html>

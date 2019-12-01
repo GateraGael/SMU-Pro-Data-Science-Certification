@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Web Application</title>
+  <!-- Bootstrap CDN -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <!-- CSS styles -->
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <!-- Creates the Overall Grid -->
+  <div class="container-fluid">
+    <nav class="navbar navbar-inverse">       
+      <ul>
+        <li>
+          <a href="#">Latitude</a>
+        </li>
+        <li class="dropdown">
+                <a href="plots.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" 
+                aria-expanded="false">Plots<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="temps.html">Max Temperature</a></li>
+                    <li><a href="humidity.html">Humidity</a></li>
+                    <li><a href="cloudiness.html">Cloudiness</a></li>
+                    <li><a href="windspeed.html">Wind Speed</a></li>
+                  </ul>
+          </li>
+        <li>
+          <a href="Comparisons.html">Comparison</a>
+        </li>
+        <li>
+          <a href="Data.html">Data</a>
+        </li>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+      </ul>
+    </nav>
+    <!-- Row 1 -->
+    <div class="row1">
+      <div class="col-sm-6">
+      <h2>Summary: Latitude vs. X</h2> 
+      <p style="color:rgba(4, 8, 65, 0.774);font-size:150%;font-family: Arial, Helvetica, sans-serif">
+            As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). 
+            More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than the northern hemisphere. 
+            This may be due to the tilt of the earth.
+            There is no strong relationship between latitude and cloudiness, however, it is interesting to see that a strong band of cities sits at 0, 80, and 100% cloudiness.
+            There is no strong relationship between latitude and wind speed, however in northern hemispheres there is a flurry of cities with over 20 mph of wind. </p>
+     <img data-aria-label-part="" src="Images/Latitude_Cloudiness.png" alt="" style="width: 60%; top: -42px;"></div>
+      </div>
+      <!--Row 2-->
+    <div class="row2">
+        <div class="col-sm-6">
+         <h2>Visualisations</h2>
+      <section id="figure">
+      <img id="bio-image" src="Images/Latitude_Temperature.png" class="col-sm-12 col-md-6" style="width: 50%";>
+      <img id="bio-image" src="Images/Latitude_Humidity.png" class="col-sm-12 col-md-6"style="width: 50%";>
+      <img id="bio-image" src="Images/Latitude_Cloudiness.png" class="col-sm-12 col-md-6"style="width: 50%";>
+      <img id="bio-image" src="Images/Latitude_WindSpeed.png" class="col-sm-12 col-md-6"style="width: 50%";>
+    </section>   
+</div>
+</div>
+
+<div id="footer">@Copyright Coding Bootcamp 2019</div>
+</body>
+
+</html>
