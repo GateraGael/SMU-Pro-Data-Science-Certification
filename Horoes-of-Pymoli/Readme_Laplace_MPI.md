@@ -1,6 +1,6 @@
->>Students: 
->>Natanael Bort Soldevila
->>Gael Ruta Gatera
+Students: 
+Natanael Bort Soldevila
+Gael Ruta Gatera
 
 ## Laplace Parallelization (MPI)
 
@@ -10,3 +10,7 @@ __# Introduction__
 
 # Methods Adopted
 &nbsp;&nbsp;&nbsp;&nbsp;Using handles defined by the MPI protocol the the following calls were made in order to successfully parallelize the Laplace Equation Numerically Solved by Jacobi Iteration.
+
+```c
+MPI_Comm_rank(MPI_COMM_WORLD, &me);
+```
